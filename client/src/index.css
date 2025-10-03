@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 4%);
+  --foreground: hsl(0, 0%, 98%);
+  --card: hsl(0, 0%, 8%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --popover: hsl(0, 0%, 4%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --primary: hsl(45, 100%, 40%);
+  --primary-foreground: hsl(0, 0%, 4%);
+  --secondary: hsl(0, 0%, 12%);
+  --secondary-foreground: hsl(0, 0%, 98%);
+  --muted: hsl(0, 0%, 12%);
+  --muted-foreground: hsl(0, 0%, 65%);
+  --accent: hsl(45, 100%, 40%);
+  --accent-foreground: hsl(0, 0%, 4%);
+  --destructive: hsl(0, 75%, 60%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --border: hsl(0, 0%, 15%);
+  --input: hsl(0, 0%, 12%);
+  --ring: hsl(45, 100%, 40%);
+  --chart-1: hsl(45, 100%, 40%);
+  --chart-2: hsl(159, 100%, 36%);
+  --chart-3: hsl(42, 93%, 56%);
+  --chart-4: hsl(147, 79%, 42%);
+  --chart-5: hsl(341, 75%, 51%);
+  --sidebar: hsl(0, 0%, 8%);
+  --sidebar-foreground: hsl(0, 0%, 98%);
+  --sidebar-primary: hsl(45, 100%, 40%);
+  --sidebar-primary-foreground: hsl(0, 0%, 4%);
+  --sidebar-accent: hsl(0, 0%, 12%);
+  --sidebar-accent-foreground: hsl(45, 100%, 40%);
+  --sidebar-border: hsl(0, 0%, 15%);
+  --sidebar-ring: hsl(45, 100%, 40%);
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --radius: 0.75rem;
+  --coal: hsl(0, 0%, 4%);
+  --gold: hsl(45, 100%, 40%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 px-6 py-3;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90;
+  }
+  
+  .btn-ghost {
+    @apply hover:bg-secondary hover:text-foreground;
+  }
+  
+  .btn-gold {
+    @apply bg-gradient-to-r from-gold to-yellow-600 text-coal font-semibold hover:from-yellow-600 hover:to-gold;
+  }
+  
+  .card {
+    @apply bg-card text-card-foreground rounded-lg border border-border;
+  }
+  
+  .input {
+    @apply flex h-12 w-full rounded-md border border-border bg-input px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50;
+  }
+
+  .nfc-card {
+    background: linear-gradient(135deg, hsl(0, 0%, 10%) 0%, hsl(0, 0%, 16%) 100%);
+    border: 2px solid hsl(45, 100%, 40%);
+  }
+  
+  .smartphone {
+    background: linear-gradient(135deg, hsl(0, 0%, 16%) 0%, hsl(0, 0%, 10%) 100%);
+    border: 1px solid hsl(0, 0%, 25%);
+  }
+}
