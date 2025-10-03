@@ -1,0 +1,82 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "roby-1296@hotmail.it",
+      "password": "$2b$12$dpruIg/2UUXQx/cc5Uj35e4lWR22u8OuZz9COfRHmC4YUBwLVzq3O",
+      "username": "rob",
+      "createdAt": "2025-09-09T08:16:48.964Z",
+      "role": "USER"
+    }
+  ],
+  "profiles": [
+    {
+      "id": 1,
+      "userId": 1,
+      "displayName": "mardivino",
+      "bio": "i migliori\n",
+      "avatarUrl": "",
+      "accentColor": "#cc0000"
+    }
+  ],
+  "links": [
+    {
+      "id": 1,
+      "title": "gsgdgd",
+      "url": "https://www.tripadvisor.it/UserReviewEdit-g187869-d1782950-Mardivino-Treviso_Province_of_Treviso_Veneto.html",
+      "order": 0,
+      "userId": 1,
+      "createdAt": "2025-09-09T16:33:13.670Z",
+      "clicks": 0
+    }
+  ],
+  "clicks": [],
+  "publicPages": [],
+  "promos": [
+    {
+      "id": 1,
+      "userId": 1,
+      "publicPageId": null,
+      "title": "10",
+      "description": "10",
+      "type": "coupon",
+      "valueKind": null,
+      "value": null,
+      "startAt": "2025-09-09T08:16:00.000Z",
+      "endAt": "2025-09-16T08:16:00.000Z",
+      "maxCodes": 100,
+      "usesPerCode": 1,
+      "codeFormat": "short",
+      "qrMode": "url",
+      "active": false,
+      "createdAt": "2025-09-09T08:17:13.331Z",
+      "updatedAt": "2025-09-09T08:17:13.331Z"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "publicPageId": null,
+      "title": "rfffff",
+      "description": "dncgn",
+      "type": "coupon",
+      "valueKind": null,
+      "value": null,
+      "startAt": "2025-09-09T16:30:00.000Z",
+      "endAt": "2025-09-16T16:30:00.000Z",
+      "maxCodes": 100,
+      "usesPerCode": 1,
+      "codeFormat": "short",
+      "qrMode": "url",
+      "active": false,
+      "createdAt": "2025-09-09T16:30:31.606Z",
+      "updatedAt": "2025-09-09T16:30:31.606Z"
+    }
+  ],
+  "tickets": [],
+  "scanLogs": [],
+  "passwordResets": [],
+  "metadata": {
+    "exportedAt": "2025-09-11T08:00:31.848Z",
+    "totalRecords": 5
+  }
+}
